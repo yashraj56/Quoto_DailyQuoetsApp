@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:quoto/widgets/quote_widget.dart';
-import '../API_.dart';
+import '../API/API_.dart';
 import '../Constatns/Colors_Constants.dart';
 
 class HomePage extends StatefulWidget {
