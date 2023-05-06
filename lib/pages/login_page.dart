@@ -5,6 +5,7 @@ import 'home_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
+  // Concrete implementation
   _LoginPageState createState() => _LoginPageState();
 }
 
@@ -14,46 +15,49 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
-        margin: EdgeInsets.symmetric(horizontal: 20),
+        margin: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Spacer(
+            const Spacer(
               flex: 3,
             ),
             RichText(
               text: TextSpan(
                 style: GoogleFonts.lato(
-                  textStyle: TextStyle(color: Colors.black),
+                  textStyle: const TextStyle(color: Colors.black),
                 ),
                 children: [
-                  TextSpan(text: "Hello,\n", style: TextStyle(fontSize: 16)),
-                  TextSpan(
+                  const TextSpan(
+                      text: "Hello,\n", style: TextStyle(fontSize: 16)),
+                  const TextSpan(
                       text: "Welcome to Quote!",
                       style: TextStyle(fontSize: 25)),
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            TextField(
+            const TextField(
               decoration: InputDecoration(labelText: "Mobile Number"),
             ),
-            Spacer(),
+            const Spacer(),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomePage()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const HomePage()));
                 },
                 // color: Colors.black,
                 // textColor: Colors.white,
-                child: Text("Continue"),
+                child: const Text("Continue"),
               ),
             ),
-            Spacer(),
+            const Spacer(),
           ],
         ),
       ),
