@@ -27,10 +27,9 @@ class _LoginPageState extends State<LoginPage> {
                 style: GoogleFonts.lato(
                   textStyle: const TextStyle(color: Colors.black),
                 ),
-                children: [
-                  const TextSpan(
-                      text: "Hello,\n", style: TextStyle(fontSize: 16)),
-                  const TextSpan(
+                children: const [
+                  TextSpan(text: "Hello,\n", style: TextStyle(fontSize: 16)),
+                  TextSpan(
                       text: "Welcome to Quote!",
                       style: TextStyle(fontSize: 25)),
                 ],

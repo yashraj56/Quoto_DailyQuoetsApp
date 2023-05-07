@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                                   duration: const Duration(milliseconds: 100),
                                   curve: Curves.easeIn);
                             },
-                            bgColor: colors[index]);
+                            bgColor: generateRandomDarkColor());
                       }),
                   Container(
                     alignment: Alignment.bottomCenter,
